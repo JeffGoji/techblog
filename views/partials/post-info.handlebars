@@ -2,17 +2,19 @@
     {{!-- < href="{{post_url}}" target="_blank"> --}}
       {{!-- <a class ="card-link bg-white" href="/post/{{id}}"><h4>{{title}}</a></h4> --}}
 
-      <div class="card-body bg-white rounded-3">
+<div>
 
-  <p class="bg-white rounded-3">
-      <h5>{{title}}</h5>
+<div class="p-2">
+  <h5 class="text-center">{{title}}</h5>
+  <p>
+
     {{content}}</p>
 
-
+<hr>
     {{vote_count}}
     {{"point"}}
     by 
-    {{user.username}}
+    <b>{{user.username}}</b>
     on
     {{created_at}}
     |
@@ -24,3 +26,4 @@
     </a>
 </p>
   
+</div>

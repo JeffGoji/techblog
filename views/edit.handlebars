@@ -1,33 +1,56 @@
-<div class="card">
-  <h3 class="card-header">
-    Edit Post
-  </h3>
-  <form class="card-body edit-post-form">
-    <label for="post-title" class="form-label">
-      Title
-    </label>
-    <input
-      name="post-title"
-      type="text"
-      value="{{post.title}}"
-      class="form-input"
-    />
-    <label class="form-label" for="content">
-      Content
-    </label>
-    <input
-      name="content"
-      type="text"
-      value="{{post.content}}"
-      class="form-input"
-    />
-    <button type="submit" class="btn">
-      Update Post
-    </button>
-    <button type="button" class="btn" id="delete">
-      Delete Post
-    </button>
-  </form>
+<div class="row center">
+  <div class="col-lg-7 col-md-7 col-sm-12">
+    <h2 class="text-center mt-3">
+      Edit Post
+    </h2>
+    <p class="text-center">
+      You can edit or delete your post below
+    </p>
+    <div class="card mb-5 shadow">
+      <h3 class="card-header">
+        Edit Post
+      </h3>
+      <form class="card-body edit-post-form">
+        <label for="post-title" class="form-label">
+          Title
+        </label>
+        <br />
+        <input
+          name="post-title"
+          type="text"
+          value="{{post.title}}"
+          class="form-input form-control"
+          id="title"
+        />
+        <br />
+        <label class="form-label" for="content">
+          Content
+        </label>
+        <br />
+        <textarea
+          name="content"
+          type="text"
+          value="{{post.content}}"
+          class="form-control"
+          id="content"
+          rows="5"
+          placeholder="{{post.content}}"
+        ></textarea>
+        <br />
+        <button type="submit" class="btn btn-primary mt-2">
+          Update Post
+        </button>
+        <button type="button" class="btn btn-primary mt-2" id="delete">
+          Delete Post
+        </button>
+        <a href="/dashboard">
+          <button type="submit" class="btn btn-primary mt-2">
+            Cancel
+          </button>
+        </a>
+      </form>
+    </div>
+  </div>
 </div>
 <script src="/javascript/edit.js"></script>
 <script src="/javascript/delete.js"></script>
