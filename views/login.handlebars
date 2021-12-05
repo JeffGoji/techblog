@@ -1,20 +1,29 @@
-<form class="login-form" id="login-form">
-  <div>
-    <label for="username-login">
-      Username:
-    </label>
-    <input type="text" id="username-login" />
+  <div class="row center">
+    <div class="col-lg-7 col-md-7 col-sm-12">
+      <h2 class="text-center mt-3">Login</h2>
+      <p class="text-center">Enter your username and password below to login to your account</p>
+      <form class="login-form form-control mt-5 shadow" id="login-form">
+        <label for="username-login">
+          Username:
+        </label>
+        <br />
+        <input type="text" class="form-control" id="username-login" placeholder="Username" />
+        <br />
+        <label for="password-login">
+          Password:
+        </label>
+        <br />
+        <input
+          type="password" class="form-control"
+          id="password-login"
+          placeholder="Your Password"
+        />
+        <br />
+        <button type="submit" class="btn btn-primary mt-3">
+          Login
+        </button>
+      </form>
+    </div>
   </div>
-  <div>
-    <label for="password-login">
-      password:
-    </label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">
-      login
-    </button>
-  </div>
-
+</div>
 <script src="/javascript/login.js"></script>

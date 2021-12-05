@@ -1,14 +1,14 @@
-<div class="comments">
+<ul>
   {{#each this}}
-    <section class="comment">
-      <div class="meta">
+    <li class="comments-style">
+      <b>
         {{user.username}}
-        on
-        {{format_date created_at}}
-      </div>
-      <div class="text">
+      </b>
+      on
+      {{format_date created_at}}
+      <i>
         {{comment_text}}
-      </div>
-    </section>
+      </i>
+    </li>
   {{/each}}
-</div>
+</ul>
