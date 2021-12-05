@@ -1,14 +1,19 @@
 
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
+<div class="row center">
+<section class="col-lg-6 col-md-6 col-sm-12">
+  <h2 class="text-center">Your Posts</h2>
     {{#each posts as |post|}}
       {{> dashboard-postinfo post}}
     {{/each}}
 
+<a href="/dashboard/new"><button type="submit" class="btn btn-primary m-3">Create a New Post</button></a>
+
 </section>
+</div>
 {{/if}}
 
-<button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
+
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/delete.js"></script>

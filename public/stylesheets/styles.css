@@ -1,0 +1,46 @@
+.center {
+  justify-content: center;
+}
+
+.navbar {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder;
+}
+
+.title-nav {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px rgb(146, 0, 172);
+}
+
+.comments-style:nth-child(odd) {
+  background: rgb(206, 206, 206);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.comments-style:nth-child(even) {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 5px 5px 3px rgb(230, 85, 255);
+}
+
+hr {
+  color: black;
+}
+
+nav {
+  background-image: url("/images/bg1.jpg");
+  background-position: stretch;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+a:link {
+  text-decoration: none;
+}

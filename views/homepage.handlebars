@@ -1,7 +1,25 @@
-<ol class="post-list">
+
+
+  <div class="row center">
+    <h1 class="text-center">Welcome to TECHBLOG 9000</h1>
+    <p class="text-center">This is the tech blog of the future! You can view various blog entries below. Create an account or Sign-in to begin writting your own Tech Blog entries!</p>
+  {{#each posts as |post|}}
+  <div class="col-lg-5 col-md-5 col-sm-12">
+    <div class="card border-2 shadow m-3">
+    {{> post-info post }}
+</div>
+</div>
+</div>
+  {{/each}}
+</div>
+
+
+
+
+{{!-- <ol class="post-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
   {{/each}}
-</ol>
+</ol> --}}

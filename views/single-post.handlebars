@@ -1,0 +1,27 @@
+<div class="row center">
+    <div class="col-lg-8 col-md-8 col-sm-12">
+        <div class="card m-3 mb-5 shadow">
+  <div class="card-header">
+{{>post-info post}}
+<p>{{>comments post.comments}}
+  <br>
+</p>
+</div>
+{{#if loggedIn}}
+
+   <form class="comment-form" id="comment-form">
+  <label for="commentFormHandler" class="form-label mt-5"> Leave your comment here:</label>
+  <textarea class="form-control" id="comment-body" name="comment-body" rows="3" placeholder="Type your comment here"></textarea>
+
+
+    <button type="submit" class="btn btn-primary mt-2 mb-5">Post Comment</button>
+
+</form>
+{{/if}}
+
+
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
+</div>

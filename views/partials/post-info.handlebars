@@ -1,25 +1,26 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">
-      {{title}}
-    </a>
-    <span>
-      (
-      {{format_url post_url}}
-      )
-    </span>
-  </div>
-  <div class="meta">
+
+    {{!-- < href="{{post_url}}" target="_blank"> --}}
+      {{!-- <a class ="card-link bg-white" href="/post/{{id}}"><h4>{{title}}</a></h4> --}}
+
+      <div class="card-body bg-white rounded-3">
+
+  <p class="bg-white rounded-3">
+      <h5>{{title}}</h5>
+    {{content}}</p>
+
+
     {{vote_count}}
-    {{format_plural "point" vote_count}}
-    by
+    {{"point"}}
+    by 
     {{user.username}}
     on
-    {{format_date created_at}}
+    {{created_at}}
     |
     <a href="/post/{{id}}">
+    <p>
       {{comments.length}}
-      {{format_plural "comment" comments.length}}
+      <hr></hr>
+      {{"comment"}}
     </a>
-  </div>
-</article>
+</p>
+  
