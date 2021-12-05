@@ -4,8 +4,8 @@ const postdata = [
   {
     title: "Tech-Blog-9000 Goes Live",
     content:
-      "Tech-Blog 9000, the tech blog of the future, is now officially live on it's Heroku server!",
-    userId: 1,
+      "Tech-Blog 9000, the tech blog of the future, is now officially live on a Heroku server!",
+    user_id: 1,
   },
   {
     title: "3 Ways to Deal With the Trojan Source Attack",
